@@ -1,0 +1,59 @@
+{
+  "name": "node-ts-template",
+  "version": "0.15.4",
+  "description": "template for the node library written in typescript",
+  "homepage": "https://github.com/moki/node-ts-template",
+  "bugs": {
+    "url": "https://github.com/moki/node-ts-template/issues",
+    "email": "morozov.kirill.moki@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moki/node-ts-template.git"
+  },
+  "keywords": [
+    "parser",
+    "lexer"
+  ],
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.js",
+  "files": [
+    "lib/"
+  ],
+  "engines": {
+    "node": ">=18.*",
+    "npm": ">=9.*"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage --silence=false",
+    "test:watch": "jest --watch --verbose --silent=false",
+    "build:dev": "node scripts/development.js",
+    "build": "npm run build:clean && tsc -p tsconfig.types.json && node scripts/bundle.js",
+    "build:clean": "rm -rf lib",
+    "lint": "eslint -c .eslintrc.json \"src/**/*.ts*\"",
+    "fix": "prettier --write --log-level=silent \"./src/**/*.{ts,tsx}\"",
+    "prepublishOnly": "npm run build"
+  },
+  "author": {
+    "name": "moki",
+    "email": "morozov.kirill.moki@gmail.com",
+    "url": "github.com/moki"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@es-exec/api": "^0.0.5",
+    "@esbuild-plugins/tsconfig-paths": "^0.1.2",
+    "@gravity-ui/eslint-config": "^3.1.1",
+    "@gravity-ui/prettier-config": "^1.1.0",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/jest": "^29.5.6",
+    "@types/node": "^18.18.7",
+    "esbuild": "^0.19.5",
+    "esbuild-jest": "^0.5.0",
+    "esbuild-node-externals": "^1.9.0",
+    "eslint": "^8.52.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
