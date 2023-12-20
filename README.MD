@@ -70,6 +70,6 @@ npm install @diplodoc/json-translation
 
 #### 🔤 Compose
 
-### 🧠Architecture
+## 🧠 Architecture
 
 ![software architecture](assets/software-architecture.svg "software architecture")
