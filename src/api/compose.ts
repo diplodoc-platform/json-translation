@@ -1,6 +1,9 @@
+import assert from 'node:assert';
+
 import {JSONTranslationComposeParameters, JSONTranslationComposeResult} from './index';
 
-class MyError extends Error {}
+import {InvalidParametersError} from 'src/error';
+import {isPlainObject, isNonEmptyObject, isIntStr} from 'src/validate';
 
 /**
  * compose translations from XLIFF and skeleton into translated JSON.
@@ -11,8 +14,34 @@ class MyError extends Error {}
 async function compose(
     parameters: JSONTranslationComposeParameters,
 ): Promise<JSONTranslationComposeResult> {
-    throw new Error('not implemented');
+    assert(
+        isComposeParametersValid(parameters),
+        new InvalidParametersError('provide valid parameters for extract function'),
+    );
     return {};
+}
+
+/**
+ * validate compose function parameters
+ *
+ * @param {JSONTranslationComposeParameters} parameters - The parameters for the extraction process.
+ * @returns {Boolean} validation result - true if parameters valid and false otherwise
+ * @internal
+ */
+function isComposeParametersValid(parameters: JSONTranslationComposeParameters): Boolean {
+    const {skeleton, xliff, schema} = parameters;
+
+    let skeletonCondition = isPlainObject(skeleton) && isNonEmptyObject(skeleton);
+    for (const [k, v] of Object.entries(skeleton)) {
+        skeletonCondition = skeletonCondition && isIntStr(k) && Boolean(v?.length);
+    }
+
+    const xliffCondition = xliff?.length;
+    const schemaCondition = isPlainObject(schema) && isNonEmptyObject(schema);
+
+    const conditions = [skeletonCondition, xliffCondition, schemaCondition];
+
+    return conditions.every(Boolean);
 }
 
 export {compose};
