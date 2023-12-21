@@ -4,12 +4,12 @@ import {JSONSchema7} from 'json-schema';
  * Parameters for extracting translations from JSON data based on a JSON schema.
  *
  * @typedef {Object} JSONTranslationExtractParameters
- * @property {Record<string, unknown>} data - The JSON data to translate.
+ * @property {object} data - The JSON data to translate.
  * @property {JSONSchema7} schema - The JSON schema signaling which strings to extract.
  * @property {string | undefined} translateKeyword - Optional. The keyword used to detect translatable text.
  */
 export type JSONTranslationExtractParameters = {
-    data: Record<string, unknown>;
+    data: object;
     schema: JSONSchema7;
     translateKeyword?: string;
 };
