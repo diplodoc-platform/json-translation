@@ -6,11 +6,13 @@ export type JSONRefResolverParameters = {
 
 class JSONRefResolver {
     private resolveCircular: boolean;
+    private refs: object;
 
     constructor(parameters: JSONRefResolverParameters) {
         const {resolveCircular} = parameters;
 
         this.resolveCircular = resolveCircular;
+        this.refs = {};
     }
 
     async resolve(json: object): Promise<object> {
@@ -18,7 +20,13 @@ class JSONRefResolver {
             resolveCirculars: this.resolveCircular,
         });
 
+        this.refs = refs;
+
         return resolved;
+    }
+
+    getRefs(): object {
+        return this.refs;
     }
 }
 
