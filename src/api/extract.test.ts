@@ -1,10 +1,10 @@
 import {extract} from './extract';
 import {JSONTranslationExtractParameters} from './types';
 
-describe('extract: parameters validation', () => {
+describe('api extract: parameters validation', () => {
     it('works with valid parameters', async () => {
         await extract({data: {a: 'b'}, schema: {$schema: 'b'}});
-        await extract({data: {a: 'b'}, schema: {$schema: 'b'}, translateKeyword: 'translatable'});
+        await extract({data: {a: 'b'}, schema: {$schema: 'b'}, schemaKeyword: 'translatable'});
     });
 
     it('throws on invalid data', async () => {
@@ -29,15 +29,15 @@ describe('extract: parameters validation', () => {
         await expect(extract(parameters)).rejects.toThrow();
     });
 
-    it('throws on invalid translateKeyword', async () => {
+    it('throws on invalid schemaKeyword', async () => {
         const parameters = {
             data: {a: 'b'},
             schema: {$schema: 'b'},
-            translateKeyword: '',
+            schemaKeyword: '',
         } as unknown as JSONTranslationExtractParameters;
         await expect(extract(parameters)).rejects.toThrow();
 
-        parameters.translateKeyword = null as unknown as undefined;
+        parameters.schemaKeyword = null as unknown as string;
         await expect(extract(parameters)).rejects.toThrow();
     });
 });

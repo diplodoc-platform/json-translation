@@ -3,7 +3,7 @@ import assert from 'node:assert';
 import {InvalidParametersError} from 'src/error';
 import {isNonEmptyObject, isObjectOrArray, isPlainObject} from 'src/validate';
 
-import {ExtractPipeline} from 'src/extractor';
+import {Extractor} from 'src/extractor';
 
 import {JSONTranslationExtractParameters, JSONTranslationExtractResult} from './index';
 
@@ -21,7 +21,7 @@ async function extract(
         new InvalidParametersError('provide valid parameters for extract function'),
     );
 
-    const extractor = new ExtractPipeline(parameters);
+    const extractor = new Extractor(parameters);
     return await extractor.extract();
 }
 
@@ -33,13 +33,12 @@ async function extract(
  * @internal
  */
 function isExtractParametersValid(parameters: JSONTranslationExtractParameters): Boolean {
-    const {data, schema, translateKeyword} = parameters;
+    const {data, schema, schemaKeyword} = parameters;
 
     const dataCondition = isObjectOrArray(data) && isNonEmptyObject(data);
     const schemaCondition = isPlainObject(schema) && isNonEmptyObject(schema);
-    const translateKeywordCondition =
-        translateKeyword?.length || typeof translateKeyword === 'undefined';
-    const conditions = [dataCondition, schemaCondition, translateKeywordCondition];
+    const schemaKeywordCondition = schemaKeyword?.length || typeof schemaKeyword === 'undefined';
+    const conditions = [dataCondition, schemaCondition, schemaKeywordCondition];
 
     return conditions.every(Boolean);
 }

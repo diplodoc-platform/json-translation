@@ -1,7 +1,7 @@
 import {compose} from './compose';
 import {JSONTranslationComposeParameters} from './types';
 
-describe('compose: parameters validation', () => {
+describe('api compose: parameters validation', () => {
     it('works with valid parameters', async () => {
         await compose({schema: {$schema: 'b'}, skeleton: {'1': 'a'}, xliff: 'a'});
     });
@@ -39,6 +39,20 @@ describe('compose: parameters validation', () => {
         await expect(compose(parameters)).rejects.toThrow();
 
         parameters.xliff = null as unknown as string;
+        await expect(compose(parameters)).rejects.toThrow();
+    });
+
+    it('throws on invalid schemaKeyword', async () => {
+        const parameters = {
+            skeleton: {'1': 'a'},
+            schema: {$schema: 'a'},
+            xliff: 'a',
+            schemaKeyword: '',
+        };
+
+        await expect(compose(parameters)).rejects.toThrow();
+
+        parameters.schemaKeyword = null as unknown as string;
         await expect(compose(parameters)).rejects.toThrow();
     });
 });

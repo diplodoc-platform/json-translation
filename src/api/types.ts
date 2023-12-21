@@ -6,12 +6,12 @@ import {JSONSchema7} from 'json-schema';
  * @typedef {Object} JSONTranslationExtractParameters
  * @property {object} data - The JSON data to translate.
  * @property {JSONSchema7} schema - The JSON schema signaling which strings to extract.
- * @property {string | undefined} translateKeyword - Optional. The keyword used to detect translatable text.
+ * @property {string | undefined} schemaKeyword - Optional. The keyword used to detect translatable text.
  */
 export type JSONTranslationExtractParameters = {
     data: object;
     schema: JSONSchema7;
-    translateKeyword?: string;
+    schemaKeyword?: string;
 };
 
 /**
@@ -40,9 +40,11 @@ export type JSONTranslationExtractResult = {
  * @property {string} xliff - The XLIFF document containing translation units.
  *
  * @property {JSONSchema7} schema - The JSON schema signaling which strings to replace with translations.
+ * @property {string | undefined} schemaKeyword - Optional. The keyword used to detect translatable text.
  */
 export type JSONTranslationComposeParameters = {
     schema: JSONSchema7;
+    schemaKeyword?: string;
     skeleton: Record<string, string>;
     xliff: string;
 };
@@ -52,4 +54,4 @@ export type JSONTranslationComposeParameters = {
  *
  * translated json data
  */
-export type JSONTranslationComposeResult = Promise<Record<string, unknown>>;
+export type JSONTranslationComposeResult = object;

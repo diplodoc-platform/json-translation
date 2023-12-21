@@ -29,7 +29,7 @@ async function compose(
  * @internal
  */
 function isComposeParametersValid(parameters: JSONTranslationComposeParameters): Boolean {
-    const {skeleton, xliff, schema} = parameters;
+    const {skeleton, xliff, schema, schemaKeyword} = parameters;
 
     let skeletonCondition = isPlainObject(skeleton) && isNonEmptyObject(skeleton);
     for (const [k, v] of Object.entries(skeleton)) {
@@ -38,8 +38,9 @@ function isComposeParametersValid(parameters: JSONTranslationComposeParameters):
 
     const xliffCondition = xliff?.length;
     const schemaCondition = isPlainObject(schema) && isNonEmptyObject(schema);
+    const schemaKeywordCondition = schemaKeyword?.length || typeof schemaKeyword === 'undefined';
 
-    const conditions = [skeletonCondition, xliffCondition, schemaCondition];
+    const conditions = [skeletonCondition, xliffCondition, schemaCondition, schemaKeywordCondition];
 
     return conditions.every(Boolean);
 }
