@@ -3,7 +3,7 @@ import assert from 'node:assert';
 import {JSONTranslationComposeParameters, JSONTranslationComposeResult} from './index';
 
 import {InvalidParametersError} from 'src/error';
-import {isPlainObject, isNonEmptyObject, isIntStr} from 'src/validate';
+import {isIntStr, isNonEmptyObject, isPlainObject} from 'src/validate';
 
 /**
  * compose translations from XLIFF and skeleton into translated JSON.

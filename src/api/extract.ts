@@ -1,7 +1,9 @@
 import assert from 'node:assert';
 
 import {InvalidParametersError} from 'src/error';
-import {isPlainObject, isNonEmptyObject} from 'src/validate';
+import {isNonEmptyObject, isPlainObject} from 'src/validate';
+
+import {ExtractPipeline} from 'src/extractor';
 
 import {JSONTranslationExtractParameters, JSONTranslationExtractResult} from './index';
 
@@ -19,7 +21,8 @@ async function extract(
         new InvalidParametersError('provide valid parameters for extract function'),
     );
 
-    return {skeleton: {}, xliff: ''};
+    const extractor = new ExtractPipeline(parameters);
+    return await extractor.extract();
 }
 
 /**

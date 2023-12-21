@@ -1,4 +1,5 @@
 function isPlainObject(val: unknown) {
+    // eslint-disable-next-line no-eq-null, eqeqeq
     return val != null && Object.prototype.toString.call(val) === '[object Object]';
 }
 
