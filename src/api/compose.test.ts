@@ -3,7 +3,11 @@ import {JSONTranslationComposeParameters} from './types';
 
 describe('api compose: parameters validation', () => {
     it('works with valid parameters', async () => {
-        await compose({schema: {$schema: 'b'}, skeleton: {'1': 'a'}, xliff: 'a'});
+        await compose({
+            schema: {$schema: 'http://json-schema.org/draft-07/schema#'},
+            skeleton: {'1': 'a'},
+            xliff: 'a',
+        });
     });
 
     it('throws on invalid schema', async () => {
@@ -20,7 +24,7 @@ describe('api compose: parameters validation', () => {
 
     it('throws on invalid skeleton', async () => {
         const parameters = {
-            schema: {$schema: 'a'},
+            schema: {$schema: 'http://json-schema.org/draft-07/schema#'},
             xliff: 'a',
             skeleton: null,
         } as unknown as JSONTranslationComposeParameters;
@@ -33,7 +37,7 @@ describe('api compose: parameters validation', () => {
     it('throws on invalid xliff', async () => {
         const parameters = {
             skeleton: {'1': 'a'},
-            schema: {$schema: 'a'},
+            schema: {$schema: 'http://json-schema.org/draft-07/schema#'},
             xliff: '',
         } as unknown as JSONTranslationComposeParameters;
         await expect(compose(parameters)).rejects.toThrow();
@@ -45,7 +49,7 @@ describe('api compose: parameters validation', () => {
     it('throws on invalid schemaKeyword', async () => {
         const parameters = {
             skeleton: {'1': 'a'},
-            schema: {$schema: 'a'},
+            schema: {$schema: 'http://json-schema.org/draft-07/schema#'},
             xliff: 'a',
             schemaKeyword: '',
         };
