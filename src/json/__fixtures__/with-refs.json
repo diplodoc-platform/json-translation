@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "menu": {
+            "$ref": "#/definitions/menu"
+        }
+    },
+    "definitions": {
+        "menu": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    }
+}
