@@ -1,2 +1,3 @@
-export type * from './json-ref-resolver';
-export * from './json-ref-resolver';
+export * from './ref-resolver';
+
+export type * from './ref-resolver';

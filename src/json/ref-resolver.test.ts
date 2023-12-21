@@ -1,4 +1,4 @@
-import {JSONRefResolver} from './json-ref-resolver';
+import {JSONRefResolver} from './ref-resolver';
 import {withRefs, withoutRefs} from './__fixtures__';
 
 describe('json ref resolver', () => {
