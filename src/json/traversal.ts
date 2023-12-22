@@ -3,10 +3,6 @@ import {JSONSchema7} from 'json-schema';
 
 import {TraversalError} from 'src/error/traversal';
 
-export interface JSONTraversalHandler<T> {
-    handleNode(val: T): T;
-}
-
 type AjvCodeGenerationFunctionParameters<T> = {
     type: JSONType;
     handler: T;
@@ -51,7 +47,7 @@ class JSONTraversal {
         }
     }
 
-    addNodeHandler<T extends JSONType, U>(type: T, schemaKeyword: string, handler: U) {
+    addNodeHandler<T extends JSONType, H>(type: T, schemaKeyword: string, handler: H) {
         const keyword: CodeKeywordDefinition = {
             keyword: schemaKeyword,
             type,
