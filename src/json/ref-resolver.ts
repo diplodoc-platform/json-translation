@@ -5,28 +5,28 @@ export type JSONRefResolverParameters = {
 };
 
 class JSONRefResolver {
-    private resolveCircular: boolean;
-    private refs: object;
+    private resolveCircular_: boolean;
+    private refs_: object;
+
+    get refs(): object {
+        return this.refs_;
+    }
 
     constructor(parameters: JSONRefResolverParameters) {
         const {resolveCircular} = parameters;
 
-        this.resolveCircular = resolveCircular;
-        this.refs = {};
+        this.resolveCircular_ = resolveCircular;
+        this.refs_ = {};
     }
 
     async resolve(json: object): Promise<object> {
         const {resolved, refs} = await resolveRefs(json, {
-            resolveCirculars: this.resolveCircular,
+            resolveCirculars: this.resolveCircular_,
         });
 
-        this.refs = refs;
+        this.refs_ = refs;
 
         return resolved;
-    }
-
-    getRefs(): object {
-        return this.refs;
     }
 }
 
