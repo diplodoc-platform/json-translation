@@ -1,4 +1,4 @@
-import Ajv, {JSONType, CodeKeywordDefinition, KeywordCxt, _} from 'ajv';
+import Ajv, {CodeKeywordDefinition, JSONType, KeywordCxt, _} from 'ajv';
 import {JSONSchema7} from 'json-schema';
 
 import {TraversalError} from 'src/error/traversal';

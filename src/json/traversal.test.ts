@@ -6,16 +6,11 @@ describe('json traversal', () => {
     it('is able to modify data in place', () => {
         const data = JSON.parse(JSON.stringify(pageConstructorData));
 
-        const traversalArguments = {
+        const traversalArguments: JSONTraversalParameters = {
             schema: pageConstructorSchema,
-            schemaKeyword: 'translatable',
         };
         const traversal = new JSONTraversal(traversalArguments);
-        traversal.addNodeHandler(
-            'string',
-            'translatable',
-            (s: string) => 'i am able to modify strings',
-        );
+        traversal.addNodeHandler('string', 'translatable', () => 'i am able to modify strings');
 
         traversal.traverse(data);
         expect(data).toMatchSnapshot();
@@ -25,9 +20,8 @@ describe('json traversal', () => {
         const data = JSON.parse(JSON.stringify(pageConstructorData));
         const strings: Array<string> = new Array<string>();
 
-        const traversalArguments = {
+        const traversalArguments: JSONTraversalParameters = {
             schema: pageConstructorSchema,
-            schemaKeyword: 'translatable',
         };
         const traversal = new JSONTraversal(traversalArguments);
         traversal.addNodeHandler('string', 'translatable', (s: string) => {
