@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`json traversal is able to collect values 1`] = `
+Array [
+  "DataLens Festival",
+  "Yandex DataLens Festival",
+  "Для кого этот фестиваль",
+  "Вас ждут",
+  "Зачем участвовать",
+  "Программа",
+  "hello",
+  "Неделя 2: корпоративная аналитика в Yandex Cloud",
+  "hello",
+  "Частые вопросы",
+  "Кто может участвовать в фестивале? Что для этого нужно?",
+  "В фестивале могут участвовать все желающие аналитики, руководители и тимлиды из любой точки мира. Мероприятие проходит онлайн. Участие бесплатное.",
+  "Нужна ли регистрация, чтобы слушать онлайн-уроки?",
+  "Мы рекомендуем зарегистрироваться, чтобы получить доступ ко всем материалам онлайн-фестиваля, а также не упустить возможность принять участие в конкурсе.",
+  "Я не аналитик и не руководитель. Можно мне на фестиваль?",
+  "Программа ориентирована на аудиторию, которая знакома с принципами работы BI или имела опыт в построении системы бизнес-аналитики. В рамках этого мероприятия мы не будем рассматривать базовые понятия, но вы можете присоединиться к другим [мероприятиям Yandex Cloud](https://cloud.yandex.ru/events).",
+  "Что я получу после фестиваля?",
+  "Вы сможете  принять участие в конкурсе на лучшее выполнение задания. Сертификатов и дипломов за посещение мероприятий фестиваля не предусмотрено.",
+  "Будут ли записи онлайн‑уроков?",
+  "Да, вы сможете посмотреть записи в личном кабинете и после окончания фестиваля — на [Youtube-канале Yandex Cloud](https://www.youtube.com/c/YandexCloudPlatform/).",
+  "Регистрируйтесь на фестиваль, <br> участие бесплатно",
+]
+`;
+
+exports[`json traversal is able to modify data in place 1`] = `
+Object {
+  "blocks": Array [
+    Object {
+      "background": Object {
+        "color": "#EFF2F8",
+        "fullWidth": false,
+        "image": Object {
+          "desktop": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_cover.png",
+          "disableCompress": true,
+          "mobile": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_cover_mob-new.png",
+        },
+      },
+      "breadcrumbs": Object {
+        "items": Array [
+          Object {
+            "text": "На главную",
+            "url": "/",
+          },
+        ],
+      },
+      "buttons": Array [
+        Object {
+          "size": "promo",
+          "text": "Хочу участвовать",
+          "theme": "action",
+          "url": "#registration",
+        },
+      ],
+      "description": "Онлайн-фестиваль Yandex Cloud для аналитиков и руководителей о лучших практиках визуализации и анализа данных с помощью Yandex DataLens. Эксперты помогут разобраться в нюансах работы с DataLens, сравнить сервис с другими решениями и запланировать переезд на новую BI‑систему. Участвуйте бесплатно.",
+      "overtitle": "5–16 декабря",
+      "resetPaddings": true,
+      "theme": "default",
+      "title": "i am able to modify strings",
+      "type": "header-block",
+      "verticalOffset": "m",
+      "width": "s",
+    },
+    Object {
+      "anchor": Object {
+        "text": "Для кого",
+        "url": "1",
+      },
+      "animated": false,
+      "description": "* Для аналитиков, которые уже используют DataLens или хотят познакомиться с инструментом поближе
+* Для руководителей или тимлидов аналитики, которые выбирают BI‑систему для своей компании и хотят узнать о ней больше\\"
+",
+      "direction": "media-content",
+      "disableShadow": true,
+      "media": Object {
+        "image": Object {
+          "disableCompress": true,
+          "src": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_1.png",
+        },
+      },
+      "title": "i am able to modify strings",
+      "type": "media-block",
+    },
+    Object {
+      "animated": false,
+      "description": " * Видеоуроки и полезные материалы от BI‑экспертов Yandex Cloud, а также компаний «Ёлва», «ДелоТех» (Группа компаний «Дело») и других
+* Живые сессии вопросов и ответов, где вы сможете спросить экспертов обо всем
+* Практические задания от экспертов
+* Конкурс и сюрпризы для победителей",
+      "direction": "content-media",
+      "disableShadow": true,
+      "largeMedia": false,
+      "media": Object {
+        "image": Object {
+          "disableCompress": true,
+          "src": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_2.png",
+        },
+      },
+      "title": "i am able to modify strings",
+      "type": "media-block",
+    },
+    Object {
+      "anchor": Object {
+        "text": "Зачем участвовать",
+        "url": "2",
+      },
+      "children": Array [
+        Object {
+          "description": "Вы прокачаете свои хардскиллы в аналитике на практических кейсах",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/step_01.svg",
+          "title": "Новые навыки",
+          "type": "card-with-image",
+        },
+        Object {
+          "description": "Получите знания для принятия взвешенных решений о переезде на новую BI‑систему",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/step_02.svg",
+          "title": "Знания на базе опыта",
+          "type": "card-with-image",
+        },
+        Object {
+          "description": "Обменяетесь опытом в комьюнити единомышленников в Telegram",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/step_03.svg",
+          "title": "Комьюнити",
+          "type": "card-with-image",
+        },
+        Object {
+          "description": "Сможете принять участие в конкурсе и получить приятный бонус",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/step_04.svg",
+          "title": "Бонус",
+          "type": "card-with-image",
+        },
+      ],
+      "colSizes": Object {
+        "all": 12,
+        "md": 3,
+        "sm": 3,
+      },
+      "title": "i am able to modify strings",
+      "type": "card-layout-block",
+    },
+    Object {
+      "text": "Вы можете принять участие как в одном треке, так и в обоих. Онлайн‑фестиваль будет проходить на платформе Яндекс Практикума с доступом в личный кабинет. Участие бесплатное по предварительной регистрации.",
+      "textContent": null,
+      "title": "i am able to modify strings",
+      "type": "content-layout-block",
+    },
+    Object {
+      "anchor": Object {
+        "children": Array [
+          Object {
+            "description": " ",
+            "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_1-new.png",
+            "title": "Обзор Yandex DataLens и сравнение с другими системами",
+            "type": "card-with-image",
+          },
+          Object {
+            "description": "",
+            "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_2-new.png",
+            "title": "Кейсы переноса отчётов на Yandex DataLens",
+            "type": "card-with-image",
+          },
+          Object {
+            "description": "",
+            "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_3.png",
+            "title": "Сессия вопросов и ответов с экспертом",
+            "type": "card-with-image",
+          },
+        ],
+        "text": "Программа",
+        "title": "Неделя 1: создание дашбордов в Yandex DataLens",
+        "url": "program",
+      },
+      "title": "i am able to modify strings",
+      "type": "card-layout-block",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "description": "",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_4-new.png",
+          "title": "Что нужно знать об аналитике в облаке",
+          "type": "card-with-image",
+        },
+        Object {
+          "description": "",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_5-new.png",
+          "title": "Кейсы миграции аналитических систем на Yandex Cloud",
+          "type": "card-with-image",
+        },
+        Object {
+          "description": "",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_6-new.png",
+          "title": "Сессия вопросов и ответов c экспертом",
+          "type": "card-with-image",
+        },
+      ],
+      "title": "i am able to modify strings",
+      "type": "card-layout-block",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "description": "Менеджер по развитию бизнеса Yandex DataLens. Активный участник комьюнити Yandex DataLens в Telegram",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/speaker_photo_dubinin.png",
+          "title": "Павел Дубинин",
+          "type": "card-with-image",
+        },
+        Object {
+          "description": "BI‑евангелист Yandex DataLens. Экс‑руководитель аналитики Yandex Go",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/speaker_photo_bunin.png",
+          "title": "Роман Бунин",
+          "type": "card-with-image",
+        },
+        Object {
+          "description": "Руководитель отдела анализа данных и отчётности компании «ДелоТех» (Группа компаний «Дело»)",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/speaker_photo_tereshkin.png",
+          "title": "Дмитрий Терёшкин",
+          "type": "card-with-image",
+        },
+        Object {
+          "description": "Ведущий консультант компании «Ёлва»",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/speaker_photo_soloviev.png",
+          "title": "Леонид Соловьев",
+          "type": "card-with-image",
+        },
+      ],
+      "slidesToShow": Object {
+        "lg": 4,
+        "md": 4,
+        "xl": 4,
+      },
+      "text": "Эксперты курса",
+      "title": "i am able to modify strings",
+      "type": "slider-block",
+    },
+    Object {
+      "items": Array [
+        Object {
+          "text": "i am able to modify strings",
+          "title": "i am able to modify strings",
+        },
+        Object {
+          "text": "i am able to modify strings",
+          "title": "i am able to modify strings",
+        },
+        Object {
+          "text": "i am able to modify strings",
+          "title": "i am able to modify strings",
+        },
+        Object {
+          "text": "i am able to modify strings",
+          "title": "i am able to modify strings",
+        },
+        Object {
+          "text": "i am able to modify strings",
+          "title": "i am able to modify strings",
+        },
+      ],
+      "title": "i am able to modify strings",
+      "type": "questions-block",
+    },
+    Object {
+      "anchor": Object {
+        "text": "Регистрация",
+        "url": "registration",
+      },
+      "slug": "datalens-fest-form",
+      "textContent": null,
+      "title": "i am able to modify strings",
+      "type": "form-block",
+    },
+  ],
+  "menu": Object {
+    "title": "i am able to modify strings",
+  },
+}
+`;
