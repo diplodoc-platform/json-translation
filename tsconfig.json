@@ -4,7 +4,6 @@
     "declaration": true,
     "moduleResolution":"nodenext",
     "esModuleInterop": true,
-    "skipLibCheck": true,
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "lib/",
