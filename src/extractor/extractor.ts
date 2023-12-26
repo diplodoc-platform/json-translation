@@ -1,5 +1,3 @@
-import Ajv from 'ajv';
-
 import {JSONSchema7} from 'json-schema';
 
 import {JSONTranslationExtractParameters, JSONTranslationExtractResult} from 'src/api';

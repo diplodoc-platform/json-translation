@@ -1,4 +1,4 @@
-import {Parser, Builder} from 'xml2js';
+import {Builder, Parser} from 'xml2js';
 
 import {ExtractParameters} from '@diplodoc/markdown-translation';
 
@@ -37,8 +37,8 @@ class XLIFFMerger {
             xmlVersion,
         } = parameters;
 
-        this.sourceLanguageLocale_ = {language: 'ru', locale: 'RU'};
-        this.targetLanguageLocale_ = {language: 'en', locale: 'US'};
+        this.sourceLanguageLocale_ = sourceLanguageLocale ?? {language: 'ru', locale: 'RU'};
+        this.targetLanguageLocale_ = targetLanguageLocale ?? {language: 'en', locale: 'US'};
 
         this.dataType_ = dataType ?? 'markdown';
         this.contentName_ = contentName ?? 'json-translation-content';
@@ -77,7 +77,7 @@ class XLIFFMerger {
         return rendered;
     }
 
-    private xliffTemplate(transUnits: any[]) {
+    private xliffTemplate(transUnits: unknown[]) {
         return {
             xliff: {
                 $: {
