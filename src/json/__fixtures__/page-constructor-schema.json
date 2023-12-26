@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "naive page constructor schema",
+    "properties": {
+        "menu": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "translatable": true
+                }
+            }
+        },
+        "blocks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "anyOf": [
+                    {"$ref": "#/definitions/block-with-title"},
+                    {"$ref": "#/definitions/block-without-title"}
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "block-with-title": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "translatable": true
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title": {
+                                "type": "string",
+                                "translatable": true
+                            },
+                            "text": {
+                                "type": "string",
+                                "translatable": true
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                }
+            }
+        },
+        "block-without-title": {
+            "type": "object",
+            "additionalProperties": true
+        }
+    }
+}

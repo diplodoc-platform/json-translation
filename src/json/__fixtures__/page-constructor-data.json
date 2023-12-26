@@ -1,0 +1,245 @@
+{
+  "menu": {
+    "title": "DataLens Festival"
+  },
+  "blocks": [
+    {
+      "type": "header-block",
+      "title": "Yandex DataLens Festival",
+      "overtitle": "5–16 декабря",
+      "description": "Онлайн-фестиваль Yandex Cloud для аналитиков и руководителей о лучших практиках визуализации и анализа данных с помощью Yandex DataLens. Эксперты помогут разобраться в нюансах работы с DataLens, сравнить сервис с другими решениями и запланировать переезд на новую BI‑систему. Участвуйте бесплатно.",
+      "width": "s",
+      "resetPaddings": true,
+      "verticalOffset": "m",
+      "theme": "default",
+      "breadcrumbs": {
+        "items": [
+          {
+            "url": "/",
+            "text": "На главную"
+          }
+        ]
+      },
+      "background": {
+        "image": {
+          "mobile": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_cover_mob-new.png",
+          "desktop": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_cover.png",
+          "disableCompress": true
+        },
+        "color": "#EFF2F8",
+        "fullWidth": false
+      },
+      "buttons": [
+        {
+          "text": "Хочу участвовать",
+          "theme": "action",
+          "size": "promo",
+          "url": "#registration"
+        }
+      ]
+    },
+    {
+      "type": "media-block",
+      "direction": "media-content",
+      "animated": false,
+      "anchor": {
+        "url": "1",
+        "text": "Для кого"
+      },
+      "media": {
+        "image": {
+          "src": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_1.png",
+          "disableCompress": true
+        }
+      },
+      "disableShadow": true,
+      "title": "Для кого этот фестиваль",
+      "description": "* Для аналитиков, которые уже используют DataLens или хотят познакомиться с инструментом поближе\n* Для руководителей или тимлидов аналитики, которые выбирают BI‑систему для своей компании и хотят узнать о ней больше\"\n"
+    },
+    {
+      "type": "media-block",
+      "direction": "content-media",
+      "animated": false,
+      "title": "Вас ждут",
+      "description": " * Видеоуроки и полезные материалы от BI‑экспертов Yandex Cloud, а также компаний «Ёлва», «ДелоТех» (Группа компаний «Дело») и других\n* Живые сессии вопросов и ответов, где вы сможете спросить экспертов обо всем\n* Практические задания от экспертов\n* Конкурс и сюрпризы для победителей",
+      "media": {
+        "image": {
+          "src": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_2.png",
+          "disableCompress": true
+        }
+      },
+      "largeMedia": false,
+      "disableShadow": true
+    },
+    {
+      "type": "card-layout-block",
+      "title": "Зачем участвовать",
+      "anchor": {
+        "url": "2",
+        "text": "Зачем участвовать"
+      },
+      "colSizes": {
+        "all": 12,
+        "md": 3,
+        "sm": 3
+      },
+      "children": [
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/step_01.svg",
+          "title": "Новые навыки",
+          "description": "Вы прокачаете свои хардскиллы в аналитике на практических кейсах"
+        },
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/step_02.svg",
+          "title": "Знания на базе опыта",
+          "description": "Получите знания для принятия взвешенных решений о переезде на новую BI‑систему"
+        },
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/step_03.svg",
+          "title": "Комьюнити",
+          "description": "Обменяетесь опытом в комьюнити единомышленников в Telegram"
+        },
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/step_04.svg",
+          "title": "Бонус",
+          "description": "Сможете принять участие в конкурсе и получить приятный бонус"
+        }
+      ]
+    },
+    {
+      "type": "content-layout-block",
+      "textContent": null,
+      "title": "Программа",
+      "text": "Вы можете принять участие как в одном треке, так и в обоих. Онлайн‑фестиваль будет проходить на платформе Яндекс Практикума с доступом в личный кабинет. Участие бесплатное по предварительной регистрации."
+    },
+    {
+      "type": "card-layout-block",
+      "title": "hello",
+      "anchor": {
+        "url": "program",
+        "text": "Программа",
+        "title": "Неделя 1: создание дашбордов в Yandex DataLens",
+        "children": [
+          {
+            "type": "card-with-image",
+            "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_1-new.png",
+            "title": "Обзор Yandex DataLens и сравнение с другими системами",
+            "description": " "
+          },
+          {
+            "type": "card-with-image",
+            "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_2-new.png",
+            "title": "Кейсы переноса отчётов на Yandex DataLens",
+            "description": ""
+          },
+          {
+            "type": "card-with-image",
+            "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_3.png",
+            "title": "Сессия вопросов и ответов с экспертом",
+            "description": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "card-layout-block",
+      "title": "Неделя 2: корпоративная аналитика в Yandex Cloud",
+      "children": [
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_4-new.png",
+          "title": "Что нужно знать об аналитике в облаке",
+          "description": ""
+        },
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_5-new.png",
+          "title": "Кейсы миграции аналитических систем на Yandex Cloud",
+          "description": ""
+        },
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/img_prog_6-new.png",
+          "title": "Сессия вопросов и ответов c экспертом",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "type": "slider-block",
+      "title": "hello",
+      "text": "Эксперты курса",
+      "slidesToShow": {
+        "md": 4,
+        "lg": 4,
+        "xl": 4
+      },
+      "children": [
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/speaker_photo_dubinin.png",
+          "title": "Павел Дубинин",
+          "description": "Менеджер по развитию бизнеса Yandex DataLens. Активный участник комьюнити Yandex DataLens в Telegram"
+        },
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/speaker_photo_bunin.png",
+          "title": "Роман Бунин",
+          "description": "BI‑евангелист Yandex DataLens. Экс‑руководитель аналитики Yandex Go"
+        },
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/speaker_photo_tereshkin.png",
+          "title": "Дмитрий Терёшкин",
+          "description": "Руководитель отдела анализа данных и отчётности компании «ДелоТех» (Группа компаний «Дело»)"
+        },
+        {
+          "type": "card-with-image",
+          "image": "https://storage.yandexcloud.net/cloud-www-assets/datalens-fest/speaker_photo_soloviev.png",
+          "title": "Леонид Соловьев",
+          "description": "Ведущий консультант компании «Ёлва»"
+        }
+      ]
+    },
+    {
+      "type": "questions-block",
+      "title": "Частые вопросы",
+      "items": [
+        {
+          "title": "Кто может участвовать в фестивале? Что для этого нужно?",
+          "text": "В фестивале могут участвовать все желающие аналитики, руководители и тимлиды из любой точки мира. Мероприятие проходит онлайн. Участие бесплатное."
+        },
+        {
+          "title": "Нужна ли регистрация, чтобы слушать онлайн-уроки?",
+          "text": "Мы рекомендуем зарегистрироваться, чтобы получить доступ ко всем материалам онлайн-фестиваля, а также не упустить возможность принять участие в конкурсе."
+        },
+        {
+          "title": "Я не аналитик и не руководитель. Можно мне на фестиваль?",
+          "text": "Программа ориентирована на аудиторию, которая знакома с принципами работы BI или имела опыт в построении системы бизнес-аналитики. В рамках этого мероприятия мы не будем рассматривать базовые понятия, но вы можете присоединиться к другим [мероприятиям Yandex Cloud](https://cloud.yandex.ru/events)."
+        },
+        {
+          "title": "Что я получу после фестиваля?",
+          "text": "Вы сможете  принять участие в конкурсе на лучшее выполнение задания. Сертификатов и дипломов за посещение мероприятий фестиваля не предусмотрено."
+        },
+        {
+          "title": "Будут ли записи онлайн‑уроков?",
+          "text": "Да, вы сможете посмотреть записи в личном кабинете и после окончания фестиваля — на [Youtube-канале Yandex Cloud](https://www.youtube.com/c/YandexCloudPlatform/)."
+        }
+      ]
+    },
+    {
+      "type": "form-block",
+      "anchor": {
+        "url": "registration",
+        "text": "Регистрация"
+      },
+      "textContent": null,
+      "title": "Регистрируйтесь на фестиваль, <br> участие бесплатно",
+      "slug": "datalens-fest-form"
+    }
+  ]
+}

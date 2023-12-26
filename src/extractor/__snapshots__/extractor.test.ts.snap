@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`extractor generates skeleton and xliff 1`] = `
+Object {
+  "1": "%%%1%%%",
+  "10": "%%%1%%%",
+  "11": "%%%1%%% %%%2%%%",
+  "12": "%%%1%%% %%%2%%% %%%3%%%",
+  "13": "%%%1%%%",
+  "14": "%%%1%%%",
+  "15": "%%%1%%% %%%2%%%",
+  "16": "%%%1%%% %%%2%%%",
+  "17": "%%%1%%%",
+  "18": "%%%1%%% %%%2%%%",
+  "19": "%%%1%%%",
+  "2": "%%%1%%%",
+  "20": "%%%1%%%",
+  "21": "%%%1%%%",
+  "3": "%%%1%%%",
+  "4": "%%%1%%%",
+  "5": "%%%1%%%",
+  "6": "%%%1%%%",
+  "7": "%%%1%%%",
+  "8": "%%%1%%%",
+  "9": "%%%1%%%",
+}
+`;
+
+exports[`extractor generates skeleton and xliff 2`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" standalone=\\"yes\\"?>
+<xliff xmlns=\\"urn:oasis:names:tc:xliff:document:1.2\\" version=\\"1.2\\">
+  <file original=\\"json-translation-content\\" source-language=\\"ru-RU\\" target-language=\\"en-US\\" datatype=\\"markdown\\">
+    <header>
+      <skeleton>
+        <external-file href=\\"json-translation-skeleton\\"/>
+      </skeleton>
+    </header>
+    <body>
+      <trans-unit id=\\"1-1\\">
+        <source>DataLens Festival</source>
+      </trans-unit>
+      <trans-unit id=\\"2-1\\">
+        <source>Yandex DataLens Festival</source>
+      </trans-unit>
+      <trans-unit id=\\"3-1\\">
+        <source>Для кого этот фестиваль</source>
+      </trans-unit>
+      <trans-unit id=\\"4-1\\">
+        <source>Вас ждут</source>
+      </trans-unit>
+      <trans-unit id=\\"5-1\\">
+        <source>Зачем участвовать</source>
+      </trans-unit>
+      <trans-unit id=\\"6-1\\">
+        <source>Программа</source>
+      </trans-unit>
+      <trans-unit id=\\"7-1\\">
+        <source>hello</source>
+      </trans-unit>
+      <trans-unit id=\\"8-1\\">
+        <source>Неделя 2: корпоративная аналитика в Yandex Cloud</source>
+      </trans-unit>
+      <trans-unit id=\\"9-1\\">
+        <source>hello</source>
+      </trans-unit>
+      <trans-unit id=\\"10-1\\">
+        <source>Частые вопросы</source>
+      </trans-unit>
+      <trans-unit id=\\"11-1\\">
+        <source>Кто может участвовать в фестивале?</source>
+      </trans-unit>
+      <trans-unit id=\\"11-2\\">
+        <source>Что для этого нужно?</source>
+      </trans-unit>
+      <trans-unit id=\\"12-1\\">
+        <source>В фестивале могут участвовать все желающие аналитики, руководители и тимлиды из любой точки мира.</source>
+      </trans-unit>
+      <trans-unit id=\\"12-2\\">
+        <source>Мероприятие проходит онлайн.</source>
+      </trans-unit>
+      <trans-unit id=\\"12-3\\">
+        <source>Участие бесплатное.</source>
+      </trans-unit>
+      <trans-unit id=\\"13-1\\">
+        <source>Нужна ли регистрация, чтобы слушать онлайн-уроки?</source>
+      </trans-unit>
+      <trans-unit id=\\"14-1\\">
+        <source>Мы рекомендуем зарегистрироваться, чтобы получить доступ ко всем материалам онлайн-фестиваля, а также не упустить возможность принять участие в конкурсе.</source>
+      </trans-unit>
+      <trans-unit id=\\"15-1\\">
+        <source>Я не аналитик и не руководитель.</source>
+      </trans-unit>
+      <trans-unit id=\\"15-2\\">
+        <source>Можно мне на фестиваль?</source>
+      </trans-unit>
+      <trans-unit id=\\"16-1\\">
+        <source>Программа ориентирована на аудиторию, которая знакома с принципами работы BI или имела опыт в построении системы бизнес-аналитики.</source>
+      </trans-unit>
+      <trans-unit id=\\"16-2\\">
+        <source>
+          В рамках этого мероприятия мы не будем рассматривать базовые понятия, но вы можете присоединиться к другим .
+          <g ctype=\\"x-link_text_part\\" equiv-text=\\"[]\\">мероприятиям Yandex Cloud</g>
+          <g ctype=\\"x-link_attributes_part\\" equiv-text=\\"()\\">
+            <x ctype=\\"x-link_attributes_href\\" equiv-text=\\"https://cloud.yandex.ru/events\\"/>
+          </g>
+        </source>
+      </trans-unit>
+      <trans-unit id=\\"17-1\\">
+        <source>Что я получу после фестиваля?</source>
+      </trans-unit>
+      <trans-unit id=\\"18-1\\">
+        <source>Вы сможете  принять участие в конкурсе на лучшее выполнение задания.</source>
+      </trans-unit>
+      <trans-unit id=\\"18-2\\">
+        <source>Сертификатов и дипломов за посещение мероприятий фестиваля не предусмотрено.</source>
+      </trans-unit>
+      <trans-unit id=\\"19-1\\">
+        <source>Будут ли записи онлайн‑уроков?</source>
+      </trans-unit>
+      <trans-unit id=\\"20-1\\">
+        <source>
+          Да, вы сможете посмотреть записи в личном кабинете и после окончания фестиваля — на .
+          <g ctype=\\"x-link_text_part\\" equiv-text=\\"[]\\">Youtube-канале Yandex Cloud</g>
+          <g ctype=\\"x-link_attributes_part\\" equiv-text=\\"()\\">
+            <x ctype=\\"x-link_attributes_href\\" equiv-text=\\"https://www.youtube.com/c/YandexCloudPlatform/\\"/>
+          </g>
+        </source>
+      </trans-unit>
+      <trans-unit id=\\"21-1\\">
+        <source>
+          Регистрируйтесь на фестиваль,  участие бесплатно
+          <x ctype=\\"x-html_inline\\" equiv-text=\\"&lt;br>\\"/>
+        </source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>"
+`;
